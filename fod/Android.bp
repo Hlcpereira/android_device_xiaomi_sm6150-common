@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_binary {
+xiaomi_sm6150_fod_hal_binary {
     name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150",
     relative_install_path: "hw",
     vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150.xml"],

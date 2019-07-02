@@ -35,10 +35,6 @@
 #define Touch_Fod_Enable 10
 #define Touch_Aod_Enable 11
 
-#define FOD_SENSOR_X 445
-#define FOD_SENSOR_Y 1931
-#define FOD_SENSOR_SIZE 190
-
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui"
 
 namespace {
@@ -99,15 +95,15 @@ FingerprintInscreen::FingerprintInscreen() {
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
-    return FOD_SENSOR_X;
+    return FOD_POS_X;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionY() {
-    return FOD_SENSOR_Y;
+    return FOD_POS_Y;
 }
 
 Return<int32_t> FingerprintInscreen::getSize() {
-    return FOD_SENSOR_SIZE;
+    return FOD_SIZE;
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
